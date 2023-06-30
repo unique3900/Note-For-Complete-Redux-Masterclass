@@ -1,0 +1,25 @@
+{
+  "name": "learn-redux-masterclass-from-coder-dost",
+  "version": "1.0.0",
+  "description": "I will be learning complete redux from zero to complex concepts from tutorials of coder dost",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unique3900/Learn-Redux-Masterclass-from-coder-dost.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unique3900/Learn-Redux-Masterclass-from-coder-dost/issues"
+  },
+  "homepage": "https://github.com/unique3900/Learn-Redux-Masterclass-from-coder-dost#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "redux": "^4.2.1"
+  }
+}
