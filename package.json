@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/unique3900/Learn-Redux-Masterclass-from-coder-dost#readme",
   "dependencies": {
+    "axios": "^1.4.0",
     "nodemon": "^2.0.22",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2"
   }
 }
