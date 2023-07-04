@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: space-between;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+.p-5{
+padding: 7px;
+}
+.text-white{
+  color: white;
+
+}
+.bg-black{
+  background-color: black;
+}
+.bg-red{
+  background-color: red;
+}
+.text-green{
+  color: green;
+}
+.text-yellow{
+  color: yellow;
+}
+.text-red{
+  color: red;
+}
+.mt-10{
+  margin-top: 30px;
+}
+.b-2{
+  border: 2px solid white;
+}
+.h-full{
+  height: 100vh;
+  width: 100%;
+}
