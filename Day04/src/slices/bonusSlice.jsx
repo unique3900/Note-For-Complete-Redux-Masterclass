@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { increament } from "./accountSlice";
 
 const initialState = {
-    points:0
+    points:2
 }
 export const bonusSlice = createSlice({
     name: 'bonus',
