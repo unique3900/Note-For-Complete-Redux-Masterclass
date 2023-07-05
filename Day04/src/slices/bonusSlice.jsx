@@ -14,6 +14,6 @@ export const bonusSlice = createSlice({
     }
 })
 
-export const increamentBonus = bonusSlice.actions;
+export const {increamentBonus} = bonusSlice.actions;
 
 export default bonusSlice.reducer;
