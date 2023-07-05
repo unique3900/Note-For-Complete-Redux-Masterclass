@@ -1,8 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
     amount: 3
 }
+
+// Using createAsyncThunk to bring data from db.json using json-server
+// can dispatch this now from any component to make api call
+export const getUserAmount = createAsyncThunk(
+    // Action name ,similar to api name in node
+    'account/getUserAmount',
+    async (id)=> {
+    const { data } = await axios.get(`http://localhost:8080/account/${id}`);
+    return data.amount;
+    }
+)
 
 export const accountSlice = createSlice({
     name: 'account',
@@ -19,6 +31,11 @@ export const accountSlice = createSlice({
         incByAmt: (state,action)=> {
             state.amount += action.payload
         }
+    },
+    extraReducers: (builder) => {
+        builder.addCase(getUserAmount.fulfilled, (state, action) => {
+            state.amount += parseInt(action.payload) 
+        })
     }
 })
 

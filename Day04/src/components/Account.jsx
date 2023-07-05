@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 
 import { useDispatch,useSelector } from 'react-redux';
-import { decreament, increament,incByAmt } from '../slices/accountSlice';
+import { decreament, increament,incByAmt,getUserAmount } from '../slices/accountSlice';
+
 
 const Account = () => {
   const [val, setval] = useState();
@@ -27,6 +28,11 @@ const amount=useSelector(state=>state.account.amount)
            className="p-5" onClick={() => {
             dispatch(incByAmt(parseInt(val) ))
           }}>IncreaseByAmount</button>
+        
+        <button 
+           className="p-5" onClick={() => {
+            dispatch(getUserAmount(1))
+          }}>User Amount</button>
           </div>
   </div>
   )
