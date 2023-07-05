@@ -8,12 +8,12 @@ export const bonusSlice = createSlice({
     name: 'bonus',
     initialState,
     reducers: {
-        increament: (state) => {
+        increamentBonus: (state) => {
             state.points +=1
         }
     }
 })
 
-export const {increament} = bonusSlice.actions;
+export const increamentBonus = bonusSlice.actions;
 
 export default bonusSlice.reducer;
