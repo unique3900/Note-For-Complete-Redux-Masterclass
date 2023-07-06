@@ -3,6 +3,7 @@ import Account from './components/Account'
 import Bonus from './components/Bonus'
 
 import {useSelector} from 'react-redux'
+import Admin from './components/Admin'
 const App = () => {
   // create slice ma deyeko nam yaha kam lagxa
 const amount=useSelector(state=> state.account.amount)
@@ -14,6 +15,7 @@ const amount=useSelector(state=> state.account.amount)
 
       <Account></Account>
       <Bonus></Bonus>
+      <Admin></Admin>
     </div>
   )
 }
